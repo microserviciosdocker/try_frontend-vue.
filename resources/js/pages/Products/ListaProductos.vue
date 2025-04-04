@@ -28,11 +28,8 @@ const breadcrumbs: BreadcrumbItem[] = [
     <div class="w-full">
       <div class="flex items-center justify-between m-2">
         <Input placeholder="Buscar producto" class="mr-2" />
-        <!-- <Button :href="route('products/create')" >
-          <Upload /> Nuevo producto
-        </Button> -->
         <TextLink
-          href="route('products.create')"
+          :href="route('products.create')"
           class="flex items-center px-4 py-2 text-xs font-medium text-white bg-blue-500 border border-transparent rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           ><Upload size="15" class="mr-1"/> Nuevo</TextLink>
       </div>
